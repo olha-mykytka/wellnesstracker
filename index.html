@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- Preconnect for faster font loading -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+     <!-- Google Fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    
+</head>
+<body>
+    <div id="newProfile">
+        <h1>Wellness Tracker</h1>
+        <p>Please complete your emotional profile</p>
+        <form>
+        <label>First Name: <input type="text" name="first" required ></label>
+        <label>Last Name: <input type="text" name="last" required ></label>
+        <label>I am feeling... <select id="physical">
+        <option value="https://openmoji.org/data/color/svg/1F600.svg">Happy</option>
+        <option value="https://openmoji.org/data/color/svg/1F609.svg">Sassy</option>
+        <option value="https://openmoji.org/data/color/svg/1F92C.svg">Angry</option>
+        <option value="https://openmoji.org/data/color/svg/1F971.svg">Bored</option>
+        <option value="https://openmoji.org/data/color/svg/1F62D.svg">Sad</option>
+        <option value="https://openmoji.org/data/color/svg/1F614.svg">Depressed</option>
+        <option value="https://openmoji.org/data/color/svg/1F618.svg">Loving</option>
+        <option value="https://openmoji.org/data/color/svg/1F62B.svg">Tired</option>
+
+
+
+
+        </select></label>
+        <input type="submit" value="Save Profile" id="saveProfile">
+        </form>
+    </div>
+    <!-- between -->
+    <div id="myProfile">
+        <section>
+            <img src="" id="emoji">
+            <p><span id="first"></span> <span id="last"></span> is currently feeling <span id="emotion"></span></p>
+        </section>
+        <button id="delProfile">Delete Profile</button>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
